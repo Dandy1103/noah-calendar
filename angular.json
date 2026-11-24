@@ -40,7 +40,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": { "port": 4206 },
+          "options": { "proxyConfig": "proxy.conf.mjs", "port": 4206 },
           "configurations": {
             "production": { "buildTarget": "noah-calendar:build:production" },
             "development": { "buildTarget": "noah-calendar:build:development" }
